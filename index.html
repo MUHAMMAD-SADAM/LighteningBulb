@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bulb</title>
+
+                                 <!-- it's Favicon -->
+  <link rel="shortcut icon" href="https://tse1.mm.bing.net/th?id=OIP.E0jSIrVy0lS6LIULac0rngHaKj&pid=Api&rs=1&c=1&qlt=95&w=79&h=112" type="image/x-icon">
+  </head>
+
+
+ <body>
+                                              <!--Lets start the HTML-->                                    
+  <div class="bulb-container">
+        <img id="bulb" src="https://tse1.mm.bing.net/th?id=OIP.dTmDdvOWEO-0s7t0Z3Yr4gHaJ4&pid=Api&rs=1&c=1&qlt=95&w=86&h=115" alt="Bulb">
+
+
+                                             <!--   Make the 2 buttons-->     
+
+                                      
+            <button id="on-btn">On</button>
+            <button id="off-btn">Off</button> 
+
+       
+ </div>
+
+                                            <!--  Let's start the javaScript  -->
+<script>
+
+        var bulb = document.getElementById('bulb');
+        var onBtn = document.getElementById('on-btn');
+        var offBtn = document.getElementById('off-btn');
+
+onBtn.addEventListener('click', function() {
+  bulb.src = 'https://tse1.mm.bing.net/th?id=OIP.E0jSIrVy0lS6LIULac0rngHaKj&pid=Api&rs=1&c=1&qlt=95&w=79&h=112';
+}
+);
+
+offBtn.addEventListener('click', function() {
+  bulb.src = 'https://tse1.mm.bing.net/th?id=OIP.dTmDdvOWEO-0s7t0Z3Yr4gHaJ4&pid=Api&rs=1&c=1&qlt=95&w=86&h=115';
+
+}
+);
+
+</script>
+
+
+<style>
+
+  body{
+       background-color: white;
+     }
+
+
+ .bulb-container {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 }
+
+    
+ #bulb {
+        width: 120px;
+        height: 150px;
+        margin: 20px;
+       }
+
+
+.on-btn{
+         margin: 0px;
+}
+
+
+.off-btn{
+       margin: 0px;
+}
+
+
+#on-btn:hover{
+              background-color: white;
+              color: black;
+             }
+    
+
+button {
+      background-color: #333333;
+      color: white;
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+     }
+     
+     
+</style>
+
+
+                                               <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
